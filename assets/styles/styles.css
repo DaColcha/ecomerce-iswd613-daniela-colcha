@@ -1,0 +1,10 @@
+h2 {
+    color: green;
+}
+
+/* el punto nos indica que se trata de una clase */
+.cell-header {
+    background-color: rgb(197, 222, 135);
+    font-weight: bold;
+    text-align: right;
+}
