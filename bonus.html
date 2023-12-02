@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Especiales</title>
+    <style>
+        .class1{
+            display: block;
+            background-color:brown;
+            color: white;
+        }
+
+        .container{
+            display:flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap;
+            justify-content: space-evenly; /* alineación main axis*/
+            align-items: flex-start;
+            height: 600px;
+            gap:10px
+        }
+
+        .container>div{
+            background-color: rgb(240, 96, 6);
+            color: white;
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+            text-align: center;
+        }
+
+        .container>div.larger{
+            font-size: 3em;
+            background-color: rgb(6, 240, 6);
+            width: 150px;
+            height: 150px;
+        }
+
+        .container>div.first{
+            order:-1;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    Productos Especiales
+    <!-- <div class="class1">Parrafo 1</div> -->
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div class="larger">3</div>
+        <div class="first">4</div>
+        <!-- <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div> -->
+    </div>
+</body>
+</html>
