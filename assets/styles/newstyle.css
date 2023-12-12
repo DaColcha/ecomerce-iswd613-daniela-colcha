@@ -1,0 +1,33 @@
+.details {
+  background: rgb(191, 253, 255);
+  color: green;
+  color: orange;
+  font-size: 25px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  border: orange 1px solid;
+}
+
+.container-header {
+  background: rgb(191, 253, 255);
+  font-family: Helvetica, sans-serif;
+  color: rgb(0, 149, 255);
+}
+
+.contenedor .hija h2 {
+  font-family: Helvetica, sans-serif;
+  color: rgb(0, 149, 255);
+}
+
+.button-base, .button-report {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.button-report {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=newstyle.css.map */

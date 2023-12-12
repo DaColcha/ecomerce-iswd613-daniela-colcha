@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/newstyle.scss","../sass/variables.scss","../sass/mixins.scss"],"names":[],"mappings":"AAGA;EACE,YCJW;EDMX,OADW;EEJT;EACA;EACA,aDFK;ECGL;EACA;;;AFKJ;EACE,YCXW;EDYX,aCXO;EDYP,OCXQ;;;ADgBF;EACI,aClBH;EDmBG,OClBF;;;ADuBV;EACI;EACA;EACA;EACA;;;AAGJ;EACI","file":"newstyle.css"}
