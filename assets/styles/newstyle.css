@@ -1,33 +1,46 @@
-.details {
-  background: rgb(191, 253, 255);
-  color: green;
-  color: orange;
-  font-size: 25px;
-  font-family: Helvetica, sans-serif;
+.brand-text {
   font-weight: bold;
-  border: orange 1px solid;
+  font-size: 24px;
+  font-style: italic;
+  color: rgb(2, 101, 171);
 }
 
-.container-header {
-  background: rgb(191, 253, 255);
+.card-style {
   font-family: Helvetica, sans-serif;
-  color: rgb(0, 149, 255);
+  border: none;
+  margin: 0px 10px 10px;
+  box-shadow: 2px 2px 20px grey;
+  padding: 15px 5px 5px 5px;
+}
+.card-style h5 {
+  font-family: Helvetica, sans-serif;
+  color: rgb(2, 156, 53);
+  font-weight: bold;
+}
+.card-style .coll-text {
+  font-family: Helvetica, sans-serif;
+  color: grey;
+  font-size: 12px;
+  text-align: center;
+}
+.card-style .button-info {
+  border: rgb(19, 177, 1) 1px solid;
+  color: rgb(19, 177, 1);
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+.card-style .button-detail {
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
 }
 
 .contenedor .hija h2 {
   font-family: Helvetica, sans-serif;
   color: rgb(0, 149, 255);
-}
-
-.button-base, .button-report {
-  border: none;
-  padding: 20px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.button-report {
-  background-color: aqua;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=newstyle.css.map */

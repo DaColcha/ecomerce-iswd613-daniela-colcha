@@ -1,17 +1,42 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-.details {
-  background: $background;
-  $myColor : green;
-  color: $myColor;
-  @include important-content($myFont);
+.brand-text{
+    font-weight: bold ;
+    font-size: 24px;
+    font-style: italic;
+    color: $brandColor;
 }
 
-.container-header {
-  background: $background;
-  font-family: $myFont;
-  color: $myColor;
+.card-style {
+    font-family: $myFont;
+    border: none;
+    margin: 0px 10px 10px;
+    box-shadow: 2px 2px 20px grey;
+    padding: 15px 5px 5px 5px; 
+
+    h5{
+        font-family: $myFont;
+        color: $productColor;
+        font-weight: bold;
+    }
+
+    .coll-text{
+        font-family: $myFont;
+        color: grey;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .button-info{
+        border: $colorInfo 1px solid;
+        color: $colorInfo;
+        @include button-shape;
+    }
+
+    .button-detail{
+        @include button-shape;
+    }
 }
 
 .contenedor{
@@ -19,18 +44,10 @@
         h2{
             font-family: $myFont;
             color: $myColor;
+            font-weight: bold;
+            margin-bottom: 30px;
         }
     }
 }
 
-.button-base{
-    border: none;
-    padding: 20px;
-    text-align:  center;
-    font-size: 18px;
-}
 
-.button-report{
-    background-color: aqua;
-    @extend .button-base;
-}

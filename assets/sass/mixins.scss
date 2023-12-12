@@ -1,7 +1,5 @@
-@mixin important-content($font_family){
-    color:orange;
-    font-size: 25px;
-    font-family: $font_family;
-    font-weight: bold;
-    border: orange 1px solid;
+@mixin button-shape{
+    font-size: 14px;
+    padding: 5px;
+    text-align:  center;
 }
