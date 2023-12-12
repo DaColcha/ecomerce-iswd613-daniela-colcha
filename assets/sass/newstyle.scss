@@ -1,0 +1,36 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.details {
+  background: $background;
+  $myColor : green;
+  color: $myColor;
+  @include important-content($myFont);
+}
+
+.container-header {
+  background: $background;
+  font-family: $myFont;
+  color: $myColor;
+}
+
+.contenedor{
+    .hija{
+        h2{
+            font-family: $myFont;
+            color: $myColor;
+        }
+    }
+}
+
+.button-base{
+    border: none;
+    padding: 20px;
+    text-align:  center;
+    font-size: 18px;
+}
+
+.button-report{
+    background-color: aqua;
+    @extend .button-base;
+}
