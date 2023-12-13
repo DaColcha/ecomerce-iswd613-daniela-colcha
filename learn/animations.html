@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes example{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+
+
+        @keyframes example2{
+            0%{
+                background-color: red;
+            }
+            25%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: greenyellow;
+            }
+            100%{
+                background-color: green;
+            }
+        }
+        #animated1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            animation-name: example2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        #animated2{
+            width: 300px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        @keyframes ball-move{
+            0%{left: 0px;top:50px; }
+            25%{left: 150px; top:70px;}
+            50%{left: 270px;top:30px;}
+            75%{left: 150px;top:0px;}
+            100%{left: 0px;top:50px;}
+        }
+        #child{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background-color:purple;
+            border-radius: 50px;
+
+            animation: ball-move 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="animated1"></div>
+    <div id="animated2">
+        <div id="child"></div>
+    </div>
+</body>
+</html>
