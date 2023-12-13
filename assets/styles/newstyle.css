@@ -43,4 +43,77 @@
   margin-bottom: 30px;
 }
 
+.contact-box {
+  background-color: rgb(243, 243, 243);
+  border-radius: 15px;
+  padding: 20px 20px 20px 20px;
+  margin: 15px 10px 10px 15px;
+}
+.contact-box .place-style {
+  font-family: Helvetica, sans-serif;
+  color: rgb(243, 243, 243);
+  font-style: italic;
+  font-size: 14px;
+}
+.contact-box .label-text {
+  font-family: Helvetica, sans-serif;
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.page-title {
+  font-family: Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-box {
+  padding: 20px 20px 20px 20px;
+  margin: 15px 10px 10px 15px;
+}
+.about-box .about-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-box {
+  padding: 20px 20px 20px 20px;
+  margin: 15px 10px 10px 15px;
+}
+.product-box h1 {
+  font-family: Helvetica, sans-serif;
+  color: rgb(2, 156, 53);
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.product-box h3 {
+  font-family: Helvetica, sans-serif;
+  color: gray;
+  padding-top: 0px;
+}
+.product-box .col img {
+  border: rgb(19, 177, 1) 1px solid;
+  border-radius: 20px;
+}
+.product-box .col p {
+  vertical-align: middle;
+}
+.product-box .col .add {
+  text-align: right;
+}
+.product-box .product-info {
+  margin-top: 15px;
+  font-size: 16px;
+}
+.product-box .product-info .label {
+  font-family: Helvetica, sans-serif;
+  background: rgb(243, 243, 243);
+  font-weight: bold;
+}
+.product-box .product-info li {
+  width: 10rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=newstyle.css.map */

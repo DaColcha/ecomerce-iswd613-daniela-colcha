@@ -3,20 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="styleSheet" href="assets/styles/about-style.css" />
+    <title>Acerca de</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="assets/styles/newstyle.css" />
   </head>
+
   <body>
-    <h1 id="titulo" class="mititulo">Acerca de</h2>
-    <p class="mitexto">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-      reprehenderit nostrum perferendis est fugit aspernatur id, optio
-      laudantium doloremque qui temporibus magnam inventore repudiandae possimus
-      nesciunt, ullam non consequuntur aliquam, voluptas ex reiciendis! Numquam
-      ullam ex dolorum optio unde explicabo, sapiente deleniti, nihil
-      consequatur maxime corrupti magnam earum perferendis eos.
-    </p>
-    <div style="width: 70%;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand brand-text" href="#">Mi E-Commerce</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Productos</a>
+            </li>
+            <!-- desplegable -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Consolas</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Retro</a></li>
+                <li><a class="dropdown-item" href="#">Portátiles</a></li>
+                <!-- separacion de la lista -->
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Consolas Modernas</a></li>
+              </ul>
+            </li>
+            <!-- elemento deshabilitado -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Acerca de</a>
+            </li>
+          </ul>
+          <!-- barra de busqueda -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="about-box">
+      <h3 class="page-title">Acerca de</h3>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header ">
+            <button
+              class="accordion-button about-label"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Misión
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+              nemo quibusdam magni! Sed, distinctio totam eveniet laboriosam,
+              quisquam vero quod non illum numquam suscipit consectetur
+              architecto nemo quas sit recusandae.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed about-label"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Visión
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+              nemo quibusdam magni! Sed, distinctio totam eveniet laboriosam,
+              quisquam vero quod non illum numquam suscipit consectetur
+              architecto nemo quas sit recusandae.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed about-label"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Valores
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+              nemo quibusdam magni! Sed, distinctio totam eveniet laboriosam,
+              quisquam vero quod non illum numquam suscipit consectetur
+              architecto nemo quas sit recusandae.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div style="width: 70%;">
       <table>
         <tr>
           <th>Nombre</th>
@@ -36,12 +196,6 @@
       </table>
     </div>
     <hr />
-    <a href="index.html" target="_blank">Mis otros productos</a>
-    <hr />
-    <div class="combinador">
-      <h2>titulo</h2>
-      <h4>Texto ejemplo combinador</4>
-    </div>
-
+    -->
   </body>
 </html>
