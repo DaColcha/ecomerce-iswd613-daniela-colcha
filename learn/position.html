@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #firstElement{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            color: aliceblue;
+            position: relative;
+            left: 60px;
+            top: 60px;
+            z-index: 1; /*profundidad*/
+        }
+
+        #secondElement{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            color: aliceblue;
+            position: relative;
+            z-index: 3;
+        }
+
+        #container{
+            width: 400px;
+            height: 200px;
+            background-color: aquamarine;
+            position: relative;
+        }
+
+        #child{
+            position: absolute;
+            left: 100px;
+            top:50px;
+
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            color: aliceblue;
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="firstElement"> Primer Elemento</div>
+    <div id="secondElement"> Segundo Elemento</div>
+    
+    <div id="container">
+        <div id="child">
+            componente hijo
+        </div>
+    </div>
+</body>
+</html>
