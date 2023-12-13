@@ -50,4 +50,82 @@
     }
 }
 
+.contact-box{
+    background-color: rgb(243, 243, 243, 1);
+    border-radius: 15px;
+    @include content-box;
 
+    .place-style{
+        font-family: $myFont;
+        color: rgb(243, 243, 243, 1);
+        font-style: italic;
+        font-size: 14px;
+    }
+    
+    .label-text{
+        font-family: $myFont;
+        font-weight:550;
+        font-size: 18px;
+    }
+}
+
+.page-title{
+    font-family: $myFont;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-box{
+    @include content-box;
+    .about-label{
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.product-box{
+    @include content-box;
+    h1{
+        font-family: $myFont;
+        color: $productColor;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+
+    h3{
+        font-family: $myFont;
+        color: gray;
+        padding-top: 0px;
+    }
+
+    .col{
+        img{
+            border: $colorInfo 1px solid;
+            border-radius: 20px;
+        }
+        p{
+            vertical-align:middle;
+        }
+        .add{
+            text-align: right;
+        } 
+    }
+    
+    .product-info{
+        margin-top: 15px;
+        font-size: 16px;
+
+        .label{
+            font-family: $myFont;
+            background: rgb(243, 243, 243, 1);
+            font-weight: bold;
+        }
+
+        li{
+            width: 10rem;
+            text-align: center;
+        }
+    }
+    
+}
