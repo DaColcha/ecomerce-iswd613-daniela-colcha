@@ -157,5 +157,23 @@
         </ul>
       </div>
     </div>
+    <script>
+      function traverseDOM(nodo){
+        var childNodes = nodo.childNodes;
+        childNodes.forEach(element => {
+          console.log('---------------------');
+          console.log('Nodo: ' + element.nodeName);
+          console.log('Tipo: ' + element.nodeType);
+          console.log('Valor: ' + element.nodeValue);
+          console.log('Nodo Padre: ' + element.parentNode.nodeName);
+
+          if(element.hasChildNodes()){
+            traverseDOM(element);
+          }
+        });
+      }
+
+      traverseDOM(document.body);
+    </script>
   </body>
 </html>

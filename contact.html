@@ -1,106 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Contáctenos</title>
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-        crossorigin="anonymous"
-        />
-        <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="assets/styles/newstyle.css" />
-    </head>
+  <head>
+    <title>Contáctenos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/styles/newstyle.css" />
+  </head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand brand-text" href="#">Mi E-Commerce</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
+  <body onload="pageInitializated()">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand brand-text" href="#">Mi E-Commerce</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Productos</a>
+            </li>
+            <!-- desplegable -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="product.html">Productos</a>
-                  </li>
-                  <!-- desplegable -->
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Consolas</a
-                    >
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Retro</a></li>
-                      <li><a class="dropdown-item" href="#">Portátiles</a></li>
-                      <!-- separacion de la lista -->
-                      <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="#">Consolas Modernas</a></li>
-                    </ul>
-                  </li>
-                  <!-- elemento deshabilitado -->
-                  <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">Acerca de</a>
-                  </li>
-                </ul>
-                <!-- barra de busqueda -->
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Buscar"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Buscar
-                  </button>
-                </form>
-              </div>
-            </div>
-        </nav>
-
-        <div class="contact-box">
-            <h3 class="page-title">Contáctenos</h3>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label label-text">Nombre</label>
-                <input type="text" class="form-control place-style" id="exampleFormControlInput1" placeholder="Ingresa aquí tu nombre">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label label-text">Correo Electrónico</label>
-                <input type="email" class="form-control place-style" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label label-text">Comentario</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+              >
+                Consolas</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Retro</a></li>
+                <li><a class="dropdown-item" href="#">Portátiles</a></li>
+                <!-- separacion de la lista -->
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Consolas Modernas</a></li>
+              </ul>
+            </li>
+            <!-- elemento deshabilitado -->
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Acerca de</a>
+            </li>
+          </ul>
+          <!-- barra de busqueda -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
         </div>
+      </div>
+    </nav>
 
-    </body>
+    <div class="contact-box">
+      <h3 class="page-title">Contáctenos</h3>
+      <form method="POST"  action="/processForm.html" onsubmit=" return validateForm()">
+        <div class="mb-3">
+          <label for="nombre" class="form-label label-text"
+            >Nombre</label
+          >
+          <input
+            type="text"
+            class="form-control place-style"
+            id="nombre"
+            placeholder="Ingresa aquí tu nombre"
+            onchange="changeInput()"
+            minlength="5"
+            maxlength="20"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label label-text"
+            >Correo Electrónico</label
+          >
+          <input
+            type="email"
+            class="form-control place-style"
+            id="correo"
+            placeholder="nombre@ejemplo.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="satisfaccion" class="form-label label-text"
+            >Nivel de Satisfaccion:
+          </label>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="satisfaccion"
+              value="Malo"
+            />
+            <label class="form-check-label" for="inlineRadio1">Malo</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="Bueno"
+            />
+            <label class="form-check-label" for="inlineRadio2">Bueno</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="Muy Bueno"
+            />
+            <label class="form-check-label" for="inlineRadio3">Muy Bueno</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="asunto" class="form-label label-text"
+            >Asunto</label
+          >
+          <select class="form-select" aria-label="Default select example" id="asunto">
+            <option selected>Open this select menu</option>
+            <option value="Rep">Reporte problema</option>
+            <option value="Sug">Sugerencia</option>
+            <option value="Quej">Queja</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="comentario" class="form-label label-text"
+            >Comentario</label
+          >
+          <textarea
+            class="form-control"
+            id="comentario"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <hr />
+      <button onclick="crearParrafo()" type="button" class="btn btn-info">
+        Agregar parrafo
+      </button>
+      <button
+        onclick="this.innerHTML=Date()"
+        type="button"
+        class="btn btn-warning"
+      >
+        Clic aquí
+      </button>
+    </div>
 
+    <img
+      onmouseover="changeImage(this, 'assets/images/change.png')
+      changeStyle(this, '200px')"
+      onmouseout="changeStyle(this, '100px')
+      changeImage(this, 'assets/images/contact.png')"
+      src="assets/images/contact.png"
+      width="100px"
+    />
+
+    <script>
+      function validateForm(){
+        var inputName = document.getElementById("nombre");
+        if(inputName.value == ""){
+          return false
+        }
+        return true
+      }
+      function changeImage(element, newImage) {
+        element.src = newImage;
+      }
+      function changeStyle(element, size) {
+        element.style.width = size;
+      }
+
+      function crearParrafo() {
+        // creamos los elementos
+        var parrafo = document.createElement("p");
+        var texto = document.createTextNode(
+          "Este parrafo fue creado dinamicamente"
+        );
+
+        // enlazamos los elementos
+        parrafo.appendChild(texto);
+        document.body.appendChild(parrafo);
+      }
+
+      function pageInitializated() {
+        console.log("La página se ha cargado correctamente");
+      }
+
+      function changeInput() {
+        console.log("El valor del input ha cambiado");
+      }
+
+      function onKeyDown() {
+        console.log("Se ha presionado una tecla");
+      }
+    </script>
+  </body>
 </html>
