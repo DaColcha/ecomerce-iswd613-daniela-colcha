@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"
+    />
+    <title>Jquery Sample</title>
+  </head>
+  <body>
+    <div id="mycontent">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+      ipsam assumenda. Ratione, sint. Nihil veritatis explicabo quidem commodi
+      corrupti sunt.
+    </div>
+    <button id="btn-hide">Ocultar</button>
+
+    <div id="mycontent2" style="border: 2px solid burlywood">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+      ipsam assumenda. Ratione, sint. Nihil veritatis explicabo quidem commodi
+      corrupti sunt.
+    </div>
+
+    <table id="myTable" class="display">
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1 Data 1</td>
+          <td>Row 1 Data 2</td>
+        </tr>
+        <tr>
+          <td>Row 2 Data 1</td>
+          <td>Row 2 Data 2</td>
+        </tr>
+      </tbody>
+
+      <a id="demo01" href="#animatedModal">DEMO01</a>
+
+      <!--DEMO01-->
+      <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal">CLOSE MODAL</div>
+
+        <div class="modal-content">
+          <!--Your modal content goes here-->
+        </div>
+      </div>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script>
+      
+      $(document).ready(function () {
+        $("#myTable").DataTable();
+        console.log("page ready");
+        $("#demo01").animatedModal();
+      });
+
+      $("#mycontent2").mouseenter(function () {
+        $(this).css("color", "blue");
+      });
+
+      $("#mycontent2").mouseout(function () {
+        $(this).css("color", "black");
+      });
+      function hideContent() {
+        //document.getElementById("mycontent").style.visibility = "hidden";
+        $("#mycontent").hide();
+      }
+
+      //$(selector).action()
+      //$("*") -> select all elements
+      //$(this) -> select the current element
+      //$("p.className") -> select all p elements with class="className"
+      //$("p:first") -> select the first p element
+      //$("ul li:first") -> select the first list element
+      //$("href") -> select all elements with an href attribute
+      //$("a[target='_blank']") -> select all a elements with a target attribute value equal to "_blank"
+      //$("tr:even") -> select all even tr elements
+      //$("tr:odd") -> select all odd tr elements
+
+      $("#btn-hide").click(function () {
+        hideContent();
+      });
+    </script>
+  </body>
+</html>

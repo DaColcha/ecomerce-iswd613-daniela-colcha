@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Ajax</title>
+</head>
+<body>
+    <div id="userinfo">
+        <button onclick="loadInfo()">Ver Información</button>
+    </div>
+
+    <script>
+        function loadInfo(){
+            const request = new XMLHttpRequest()
+
+            request.onload = function(){
+                document.getElementById("userinfo").innerHTML = this.responseText                
+            }
+
+            request.open("GET", "info.txt", true)//Usar true para asegurar la fluidez de la página
+            //no se pueden peticionar recursos fuera del servidor 
+            request.send()
+        }
+    </script>
+</body>
+</html>
