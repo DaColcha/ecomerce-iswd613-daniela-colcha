@@ -91,20 +91,15 @@
 
     <div class="contact-box">
       <h3 class="page-title">Contáctenos</h3>
-      <form method="POST"  action="/processForm.html" onsubmit=" return validateForm()">
+      <form id="contact-form" method="post" action="contact-submit.php">
         <div class="mb-3">
-          <label for="nombre" class="form-label label-text"
-            >Nombre</label
-          >
+          <label for="nombre" class="form-label label-text">Nombre</label>
           <input
             type="text"
             class="form-control place-style"
             id="nombre"
+            name="nombre"
             placeholder="Ingresa aquí tu nombre"
-            onchange="changeInput()"
-            minlength="5"
-            maxlength="20"
-            required
           />
         </div>
         <div class="mb-3">
@@ -115,20 +110,21 @@
             type="email"
             class="form-control place-style"
             id="correo"
+            name="correo"
             placeholder="nombre@ejemplo.com"
-            required
           />
         </div>
         <div class="mb-3">
-          <label for="satisfaccion" class="form-label label-text"
+          <label for="satis" class="form-label label-text"
             >Nivel de Satisfaccion:
           </label>
           <div class="form-check form-check-inline">
             <input
               class="form-check-input"
               type="radio"
-              name="inlineRadioOptions"
-              id="satisfaccion"
+              name="satis"
+              id="satis"
+              name="satis"
               value="Malo"
             />
             <label class="form-check-label" for="inlineRadio1">Malo</label>
@@ -137,7 +133,7 @@
             <input
               class="form-check-input"
               type="radio"
-              name="inlineRadioOptions"
+              name="satis"
               id="inlineRadio2"
               value="Bueno"
             />
@@ -147,7 +143,7 @@
             <input
               class="form-check-input"
               type="radio"
-              name="inlineRadioOptions"
+              name="satis"
               id="inlineRadio3"
               value="Muy Bueno"
             />
@@ -155,14 +151,17 @@
           </div>
         </div>
         <div class="mb-3">
-          <label for="asunto" class="form-label label-text"
-            >Asunto</label
+          <label for="asunto" class="form-label label-text">Asunto</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="asunto"
+            name="asunto"
           >
-          <select class="form-select" aria-label="Default select example" id="asunto">
             <option selected>Open this select menu</option>
-            <option value="Rep">Reporte problema</option>
-            <option value="Sug">Sugerencia</option>
-            <option value="Quej">Queja</option>
+            <option value="Repporte Problema">Reporte problema</option>
+            <option value="Sugerencia">Sugerencia</option>
+            <option value="Queja">Queja</option>
           </select>
         </div>
         <div class="mb-3">
@@ -172,42 +171,55 @@
           <textarea
             class="form-control"
             id="comentario"
+            name="comentario"
             rows="3"
-            required
           ></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
+        <p id="error-message" style="display: none; color: red">
+          Por favor llenar todos los campos
+        </p>
       </form>
-      <hr />
-      <button onclick="crearParrafo()" type="button" class="btn btn-info">
+      <!-- <hr /> -->
+      <!-- <button onclick="crearParrafo()" type="button" class="btn btn-info">
         Agregar parrafo
-      </button>
-      <button
+      </button> -->
+      <!-- <button
         onclick="this.innerHTML=Date()"
         type="button"
         class="btn btn-warning"
       >
         Clic aquí
-      </button>
+      </button> -->
     </div>
 
-    <img
+    <!-- <img
       onmouseover="changeImage(this, 'assets/images/change.png')
       changeStyle(this, '200px')"
       onmouseout="changeStyle(this, '100px')
       changeImage(this, 'assets/images/contact.png')"
       src="assets/images/contact.png"
       width="100px"
-    />
+    /> -->
 
     <script>
-      function validateForm(){
-        var inputName = document.getElementById("nombre");
-        if(inputName.value == ""){
-          return false
-        }
-        return true
-      }
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          
+          var inputName = document.getElementById("nombre").value;
+          var inputEmail = document.getElementById("correo").value;
+          var inputComment = document.getElementById("comentario").value;
+          var inputSubject = document.getElementById("asunto").value;
+          var inputSatisfaction = document.getElementById("satis").value;
+          if (!inputName || !inputEmail ||!inputComment ||!inputSubject ||!inputSatisfaction) {
+            document.getElementById("error-message").style.display = "inline";
+            event.preventDefault();
+          } else {
+            document.getElementById("error-message").style.display = "none";
+          }
+      });
+
       function changeImage(element, newImage) {
         element.src = newImage;
       }
