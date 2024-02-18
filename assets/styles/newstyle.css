@@ -45,19 +45,19 @@
   margin-bottom: 30px;
 }
 
-.contact-box {
+.form-box {
   background-color: rgb(243, 243, 243);
   border-radius: 15px;
   padding: 20px 20px 20px 20px;
   margin: 15px 10px 10px 15px;
 }
-.contact-box .place-style {
+.form-box .place-style {
   font-family: Helvetica, sans-serif;
   color: black;
   font-style: italic;
   font-size: 14px;
 }
-.contact-box .label-text {
+.form-box .label-text {
   font-family: Helvetica, sans-serif;
   font-weight: 550;
   font-size: 18px;
